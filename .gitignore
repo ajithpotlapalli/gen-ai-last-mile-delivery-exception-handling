@@ -1,0 +1,6 @@
+config.json
+chroma_playbook/
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+.env
