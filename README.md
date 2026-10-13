@@ -584,21 +584,15 @@ python -m nbconvert --to html Project_3_Full_code_Notebook_ajith.ipynb
 ## 13. Repository layout
 
 ```
-gen_ai_retail_shipment_issue/
-├── README.md                                          <- this file
-├── business_problem_statement.md                      <- original business brief
-├── Project_3_Full_code_Notebook_ajith.ipynb           <- FINAL executed notebook
-├── Project_3_Full_code_Notebook_ajith.html            <- FINAL HTML export for submission
-├── Project_3_Full_code_Notebook_ajith_v2.ipynb        <- earlier iteration
-├── Project_3_Full_code_Notebook_ajith.BACKUP_before_review.ipynb  <- backup
-├── Project 3 - Full-code Notebook_ajith_old.ipynb     <- oldest version
-└── Project 3 - AI-powered Last Mile Delivery Exception Handling Automation - Data Files/
-    ├── config.json                                    <- SECRETS, do not commit or share
-    ├── customers.db                                   <- SQLite: customers, lockers
-    ├── delivery_logs.csv
-    ├── ground_truth.csv
-    └── exception_resolution_playbook.pdf
+gen-ai-last-mile-delivery-exception-handling/
+├── README.md                                  <- this file
+├── business_problem_statement.md              <- original business brief
+├── Project_3_Full_code_Notebook_ajith.ipynb   <- FINAL executed notebook
+├── Project_3_Full_code_Notebook_ajith.html    <- FINAL HTML export for submission
+└── .gitignore                                 <- keeps config.json (secrets) out of git
 ```
+
+**Not included in this repository:** the course data files (`customers.db`, `delivery_logs.csv`, `ground_truth.csv`, `exception_resolution_playbook.pdf`) and `config.json` (API keys). To re-run the notebook, place the data files in a folder named `Project 3 - AI-powered Last Mile Delivery Exception Handling Automation - Data Files/` next to the notebook (or upload them to the Colab working directory), and create your own `config.json` (never commit it).
 
 ---
 
